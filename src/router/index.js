@@ -10,7 +10,7 @@ Router.prototype.push = function push(location, onResolve, onReject) {
 }
 
 export default new Router({
-  
+
   routes: [{
       path: '/',
       redirect: '/login'

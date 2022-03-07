@@ -32,7 +32,7 @@
           <el-table-column width="120">
             <template slot-scope="scope">
               <el-button
-                type="danger"
+                type="danger"         
                 size="small"
                 @click="handleDelete(scope.$index)"
                 >删除</el-button
@@ -119,7 +119,7 @@ export default {
       this.read = item.concat(this.read);
       this.$message.success("还原成功");
     },
-    allPush(index) {
+    allPush(index) {     
       let all = this.tableData.splice(index);
       this.read = all.concat(this.read);
       this.$message.success("全部已读");
